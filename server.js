@@ -31,7 +31,7 @@ app.post("/imageurl", (req, res) => {image.handleApiCall(req, res)})
 
 
 
-app.listen(3010, () => {console.log("its running");});
+app.listen(process.env.PORT || 3010, () => {console.log("its running on " + process.env.PORT);});
 
 /*
     /                   - GET REQUEST                   =>      return "This is home"
